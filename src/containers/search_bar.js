@@ -49,9 +49,10 @@ function mapDispatchToProps(dispatch) {
 export default connect(null, mapDispatchToProps)(SearchBar); // null because this container wont care about the state
 
 
-//ES6 huomio! Fat-Arrow funktio ottaa kontekstin (this) messiin verrattuna ES5 kontekstiin jossa jokaisella funktiolla on oma konteksti
+//ES6 huomio! Fat-Arrow funktio ottaa kontekstin (this) messiin verrattuna ES5 kontekstiin, jossa jokaisella funktiolla on oma konteksti
 
 //Eli jos on callback jonka pitää viitata this:iin niin pitää sitoa this
 
 //Middleware is a function that take an action and depending on the actions type and the actions payload or any other number of factors, the middleware can choose to let the action to pass through, or to manipulate the action, it can console log it, or it can stop it before the action reach any reducer.
-//Middleware --> Gate keeper
+//Middleware --> Gate keeper 
+

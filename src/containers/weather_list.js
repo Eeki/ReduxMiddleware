@@ -43,6 +43,7 @@ class WeatherList extends Component {
   }
 }
 
+
 function mapStateToProps({ weather }) {  //ES6 { weather } == state.weather.. equals to cons weather = state.weather
   return { weather }; // ES6 Because weather is the only parameter and has same name: { weather } === {weather : weather}
 }
